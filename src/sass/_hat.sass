@@ -1,3 +1,6 @@
+::placeholder
+    color: #ffffff
+    opacity: 1
 body
     margin: 0px
 .header
@@ -27,3 +30,47 @@ body
             color: #fff
             font-size: 12px
             margin-top: 3px
+    &_title
+        display: flex
+        color: #fff
+        width: 304px
+        justify-content: space-between
+        margin-top: 27px
+        margin-left: 72px
+        font-size: 20px
+    &_divider
+        height: 1px
+        background-color: #28466a
+
+.nav
+    height: 60px
+    background-color: $dark_blue
+    position: relative
+    &_menu
+        display: flex
+        width: 460px
+        justify-content: space-between
+        color: #98bcc8
+        font-size: 18px
+        margin-left: 72px
+        padding-top: 18px
+        &_item
+            &_active
+                color: #fff
+            &:hover
+                cursor: pointer
+    &_search
+        position: absolute
+        width: 320px
+        height: 40px
+        right: 15px
+        top: 7px
+        background-color: #061f3e
+        color: #ffffff
+        border-radius: 5px
+        border: 1px solid #425d8c
+        background: url(../icons/search-btn.png) no-repeat
+        background-position: 10px
+        padding-left: 40px
+
+
