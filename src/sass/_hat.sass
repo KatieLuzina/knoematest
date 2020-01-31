@@ -10,7 +10,7 @@ body
     &_line
         background-color: $light_blue
         height: 4px
-    &_support
+    &_support        
         background-color: $light_blue
         height: 20px
         width: 100px
@@ -19,6 +19,8 @@ body
         right: 93px
         border-bottom-left-radius: 5%
         border-bottom-right-radius: 5%
+        a
+            text-decoration: none
         &_img
             float: left
             object-fit: none
@@ -27,9 +29,11 @@ body
             height: 16px
             margin: 1px 15px 6px 8px
         &_text
+            font-family: 'Roboto Regular'
             color: #fff
             font-size: 12px
             margin-top: 3px
+            text-decoration: none
     &_title
         display: flex
         color: #fff
@@ -37,7 +41,9 @@ body
         justify-content: space-between
         margin-top: 27px
         margin-left: 72px
-        font-size: 20px
+        font-size: 18px
+        &_1
+            font-family: 'Bentham'
     &_divider
         height: 1px
         background-color: #28466a
@@ -45,7 +51,7 @@ body
 .nav
     height: 60px
     background-color: $dark_blue
-    position: relative
+    position: relative    
     &_menu
         display: flex
         width: 460px
@@ -55,6 +61,7 @@ body
         margin-left: 72px
         padding-top: 18px
         &_item
+            font-family: 'Roboto Regular'
             &_active
                 color: #fff
             &:hover
@@ -64,13 +71,13 @@ body
         width: 320px
         height: 40px
         right: 15px
-        top: 7px        
+        top: 7px
+        background-color: #061f3e
         color: #ffffff
         border-radius: 5px
         border: 1px solid #425d8c
         background: url(../icons/search-btn.png) no-repeat
-        background-position: 10px
         background-color: #061f3e
+        background-position: 10px
         padding-left: 40px
-
-
+        font-family: 'Roboto Regular'

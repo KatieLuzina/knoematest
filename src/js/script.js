@@ -14,4 +14,15 @@ $(document).ready(function(){
             $(location).attr('href',url);
         }
     })
+
+    
+    $('.general_cards_item_wrapper_button').click(function (e) {
+        
+        let id = (e.target.id).toString().slice(-1);
+        for (let i = 1; i < 5; i++) {
+            document.getElementById('more_' + i).classList.remove("general_cards_item_more_active");
+        }
+        document.getElementById('more_' + id).classList.add("general_cards_item_more_active");
+        
+    })
 })

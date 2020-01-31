@@ -1,3 +1,97 @@
 .general
     background: url(../img/bg-x2.jpg) center center/cover no-repeat
-    height: 535px
+    height: 640px
+    &_header
+        color: #fff
+        padding-top: 37px
+        margin-left: 70px
+        font-size: 26px
+        font-weight: 700
+    &_cards
+        display: flex
+        justify-content: space-between
+        margin: 70px 93px 0 93px
+        &_item
+            display: flex
+            transition-duration:  1s 
+            &_wrapper
+                position: relative
+                width: 200px
+                height: 340px
+                &:nth-child(1) 
+                    background: #fff url(../img/tile-ac-01-ega.jpg) no-repeat
+                &:nth-child(2) 
+                    background: #fff url(../img/tile-ac-02-eia.jpg) no-repeat
+                &:nth-child(3) 
+                    background: #fff url(../img/tile-ac-03-la.jpg) no-repeat
+                    &_divider
+                        margin-top: 23px               
+                &:nth-child(4) 
+                    background: #fff url(../img/tile-ac-04-tfa.jpg) no-repeat
+                &_header
+                    font-family: 'Bentham'
+                    font-size: 24px
+                    color: $dark_blue
+                    height: 87px
+                    padding: 19px 0 0 19px
+                    font-weight: 500
+                    line-height: 24px
+                &_divider
+                    background-color: #000000
+                    opacity: 0.1
+                    height: 1px
+                    margin-left: 19px
+                    margin-right: 19px
+                &_descr
+                    font-size: 14px
+                    padding: 28px 26px 0 21px
+                    font-weight: 600
+                &_button
+                    position: absolute
+                    color: $text_blue
+                    font-size: 12px
+                    bottom: 20px
+                    left: 21px
+                    align-items: center
+                    line-height: 19px
+                    cursor: pointer
+                    &_img
+                        margin-left: 12px
+                        float: right
+            &_more             
+                width: 560px
+                height: 300px
+                background-color: #fff
+                padding: 20px 
+                opacitity: 1
+                display: none
+                &_active
+                    display: block
+                    transition: 1s
+                &_line
+                    display: flex
+                    justify-content: space-between
+                &_block
+                    width: 260px
+                    margin-bottom: 25px
+                &_header
+                    text-transform: uppercase
+                    font-weight: bold
+                    font-size: 18px
+                &_divider
+                    height: 2px
+                    margin-top: 8px  
+                    margin-bottom: 20px                  
+                    background-color: #425e8d
+                &_descr
+                    font-size: 14px
+                    line-height: 14px
+
+
+                    
+
+
+
+
+
+
