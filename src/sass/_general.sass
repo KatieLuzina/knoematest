@@ -9,14 +9,27 @@
         font-weight: 700
     &_cards
         display: flex
-        justify-content: center
-        margin: 70px 93px 0 93px
+        justify-content: space-evenly
+        margin: 70px 153px 0 153px
+        &_active_1
+            margin: 70px 153px 0 853px
+            justify-content: flex-end
+        &_active_2
+            margin: 70px 153px 0 153px
+            justify-content: space-between
+        &_active_3
+            margin: 70px 153px 0 153px
+            justify-content: space-between
+        &_active_4
+            margin: 70px 853px 0 153px
+            justify-content: flex-start
         &_item
             display: flex
             transition-duration:  1s
             z-index: 1
-            background: #000000
-            opacity: 0.5
+            &_blured
+                opacity: 0.5
+                background-color: #000
             &_active
                 z-index: 2
                 opacity: 1
@@ -26,9 +39,10 @@
                 left: 93px
             &:nth-child(2) 
                 background: #fff url(../img/tile-ac-02-eia.jpg) no-repeat
-                margin-right: 47px
+                margin-right: -75px
             &:nth-child(3) 
                 background: #fff url(../img/tile-ac-03-la.jpg) no-repeat
+                margin-left: -75px
                 &_divider
                     margin-top: 23px               
             &:nth-child(4) 
