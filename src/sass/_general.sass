@@ -9,25 +9,36 @@
         font-weight: 700
     &_cards
         display: flex
-        justify-content: space-between
+        justify-content: center
         margin: 70px 93px 0 93px
         &_item
             display: flex
-            transition-duration:  1s 
+            transition-duration:  1s
+            z-index: 1
+            background: #000000
+            opacity: 0.5
+            &_active
+                z-index: 2
+                opacity: 1
+            &:nth-child(1) 
+                background: #fff url(../img/tile-ac-01-ega.jpg) no-repeat
+                position: absolute
+                left: 93px
+            &:nth-child(2) 
+                background: #fff url(../img/tile-ac-02-eia.jpg) no-repeat
+                margin-right: 47px
+            &:nth-child(3) 
+                background: #fff url(../img/tile-ac-03-la.jpg) no-repeat
+                &_divider
+                    margin-top: 23px               
+            &:nth-child(4) 
+                background: #fff url(../img/tile-ac-04-tfa.jpg) no-repeat
+                position: absolute
+                right: 93px
             &_wrapper
                 position: relative
                 width: 200px
                 height: 340px
-                &:nth-child(1) 
-                    background: #fff url(../img/tile-ac-01-ega.jpg) no-repeat
-                &:nth-child(2) 
-                    background: #fff url(../img/tile-ac-02-eia.jpg) no-repeat
-                &:nth-child(3) 
-                    background: #fff url(../img/tile-ac-03-la.jpg) no-repeat
-                    &_divider
-                        margin-top: 23px               
-                &:nth-child(4) 
-                    background: #fff url(../img/tile-ac-04-tfa.jpg) no-repeat
                 &_header
                     font-family: 'Bentham'
                     font-size: 24px
@@ -86,12 +97,3 @@
                 &_descr
                     font-size: 14px
                     line-height: 14px
-
-
-                    
-
-
-
-
-
-

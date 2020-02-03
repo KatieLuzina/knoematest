@@ -21,8 +21,11 @@ $(document).ready(function(){
         let id = (e.target.id).toString().slice(-1);
         for (let i = 1; i < 5; i++) {
             document.getElementById('more_' + i).classList.remove("general_cards_item_more_active");
+            document.getElementById('item_' + i).classList.remove("general_cards_item_active");
         }
         document.getElementById('more_' + id).classList.add("general_cards_item_more_active");
+        document.getElementById('item_' + id).classList.add("general_cards_item_active");
+
         
     })
 })
